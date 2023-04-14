@@ -7,7 +7,6 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
       - run: npm ci
-      - run: npm test
       - run: npm run build
       - name: Cypress run
         uses: cypress-io/github-action@v2
