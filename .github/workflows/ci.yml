@@ -17,4 +17,3 @@ jobs:
       - name: List built files
         if: ${{ github.ref == 'refs/heads/master' }}
         run: ls dist
-      - run: npm run publish-build
