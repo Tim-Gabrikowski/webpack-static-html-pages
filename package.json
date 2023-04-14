@@ -21,7 +21,7 @@
 		"start": "webpack serve --config webpack.dev.js",
 		"start:dist": "http-server dist --port ${PORT:-8080}",
 		"publish": "npm run build && npm run publish-build",
-		"publish-push": "git subtree push --prefix dist origin gh-pages",
+		"publish-build": "git subtree push --prefix dist origin gh-pages",
 		"build": "webpack --config webpack.prod.js",
 		"preview": "npm run build && npm run start:dist",
 		"cy:run": "cypress run"
